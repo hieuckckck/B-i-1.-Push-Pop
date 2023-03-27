@@ -1,0 +1,25 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <bits/stdc++.h>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    int n;
+    cin>>n;
+vector<pair<int,int>>a(n);
+    for(int i=0;i<n;i++){
+        cin>>a[i].first>>a[i].second;
+    }
+    vector<double>v;
+    for(int i=0;i<n;i++){
+        v.push_back(sqrt(a[i].first*a[i].first+a[i].second*a[i].second));
+    }
+    for(int i=0;i<v.size();i++){
+        cout<<fixed<<setprecision(2)<<v[i]<<" ";
+    }
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
