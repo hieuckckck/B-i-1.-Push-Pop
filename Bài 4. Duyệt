@@ -1,0 +1,79 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+
+int main() {
+    int n;
+    cin>>n;
+    vector<int>v;
+    for(int i=0;i<n;i++){
+        int x;cin>>x;
+        v.push_back(x);
+    }
+    int l,r;
+    cin>>l>>r;
+    for(auto i=v.begin()+l;i!=v.begin()+r+1;i++){
+        cout<<*i<<" ";
+    }
+    cout<<endl;
+    for(auto i=v.begin()+r;i!=v.begin()+l-1;i--){
+        cout<<*i<<" ";
+    }
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    return 0;
+}
+
+c2:
+#include<bits/stdc++.h>
+using namespace std;
+
+
+int main() {
+    int n;
+    cin>>n;
+    vector<int>v;
+    for(int i=0;i<n;i++){
+        int x;cin>>x;
+        v.push_back(x);
+    }
+    int l,r;
+    cin>>l>>r;
+    for(auto i=v.begin()+l;i<=v.begin()+r;i++){
+        cout<<*i<<" ";
+    }
+    cout<<endl;
+    for(auto i=v.begin()+r;i>=v.begin()+l;i--){
+        cout<<*i<<" ";
+    }
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    return 0;
+}
+
+c3:
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    int n;
+    cin>>n;
+    vector<int>v(n);
+    for(int i=0;i<n;i++){
+        cin>>v[i];
+    }
+    int l,r;
+    cin>>l>>r;
+    for(int i=l;i<=r;i++){
+        cout<<v[i]<<" ";
+    }
+    cout<<endl;
+    for(int i=r;i>=l;i--){
+        cout<<v[i]<<" ";
+    }
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    return 0;
+}
